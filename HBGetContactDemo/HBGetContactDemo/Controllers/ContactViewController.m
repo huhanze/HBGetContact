@@ -8,6 +8,7 @@
 
 #import "ContactViewController.h"
 #import "HBGetContact.h"
+#import "HBContact.h"
 
 @interface ContactViewController ()
 
@@ -49,9 +50,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reusedId];
     }
     
-    NSDictionary *dict = self.contacts[indexPath.row];
-    cell.textLabel.text = dict[@"name"];
-    cell.detailTextLabel.text = dict[@"telephoneNum"];
+    HBContact *contact = self.contacts[indexPath.row];
+    cell.textLabel.text = contact.name;
+    cell.detailTextLabel.text = contact.telephoneNum;
 
     
     return cell;
@@ -60,7 +61,7 @@
 #pragma mark --- 懒加载
 - (NSArray *)contacts {
     if (_contacts == nil) {
-        _contacts = [HBGetContact getAllcontactsOfPhone].copy;
+        _contacts = [HBContact dictionaryToModel:[HBGetContact getAllcontactsOfPhone].copy];
     }
     return _contacts;
 }
