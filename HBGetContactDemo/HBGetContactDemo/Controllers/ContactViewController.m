@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     self.title = @"联系人列表";
+    
     [self.tableView reloadData];
 }
 
@@ -29,7 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark --- 数据源方法
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
