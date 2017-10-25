@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7F2546A1FA0295900D35FCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254691FA0295900D35FCE /* AppDelegate.m */; };
+		F7F2546D1FA0295900D35FCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2546C1FA0295900D35FCE /* ViewController.m */; };
+		F7F254721FA0295900D35FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F254711FA0295900D35FCE /* Assets.xcassets */; };
+		F7F254781FA0295900D35FCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254771FA0295900D35FCE /* main.m */; };
+		F7F2548B1FA02D9500D35FCE /* HHBContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2548A1FA02D9500D35FCE /* HHBContactTableViewController.m */; };
+		F7F2548E1FA033D100D35FCE /* HHBContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F2548D1FA033D100D35FCE /* HHBContactTableViewCell.m */; };
+		F7F254B51FA06E5800D35FCE /* HHBGetContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */; };
+		F7F254B61FA06E5800D35FCE /* HHBContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */; };
+		F7F254B71FA06E6100D35FCE /* UIView+HHBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254B11FA06E4E00D35FCE /* UIView+HHBExtension.m */; };
+		F7F254B81FA06E6100D35FCE /* NSString+HHBPinyinString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254B41FA06E4E00D35FCE /* NSString+HHBPinyinString.m */; };
+		F7F254BB1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254BA1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7F254651FA0295900D35FCE /* HHBGetContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHBGetContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F254681FA0295900D35FCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7F254691FA0295900D35FCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7F2546B1FA0295900D35FCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F7F2546C1FA0295900D35FCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F7F254711FA0295900D35FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7F254761FA0295900D35FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F254771FA0295900D35FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7F254891FA02D9500D35FCE /* HHBContactTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBContactTableViewController.h; sourceTree = "<group>"; };
+		F7F2548A1FA02D9500D35FCE /* HHBContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBContactTableViewController.m; sourceTree = "<group>"; };
+		F7F2548C1FA033D100D35FCE /* HHBContactTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBContactTableViewCell.h; sourceTree = "<group>"; };
+		F7F2548D1FA033D100D35FCE /* HHBContactTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBContactTableViewCell.m; sourceTree = "<group>"; };
+		F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBGetContact.m; sourceTree = "<group>"; };
+		F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBContactModel.m; sourceTree = "<group>"; };
+		F7F254AE1FA06E4E00D35FCE /* HHBGetContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBGetContact.h; sourceTree = "<group>"; };
+		F7F254AF1FA06E4E00D35FCE /* HHBContactModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBContactModel.h; sourceTree = "<group>"; };
+		F7F254B11FA06E4E00D35FCE /* UIView+HHBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHBExtension.m"; sourceTree = "<group>"; };
+		F7F254B21FA06E4E00D35FCE /* NSString+HHBPinyinString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HHBPinyinString.h"; sourceTree = "<group>"; };
+		F7F254B31FA06E4E00D35FCE /* UIView+HHBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HHBExtension.h"; sourceTree = "<group>"; };
+		F7F254B41FA06E4E00D35FCE /* NSString+HHBPinyinString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHBPinyinString.m"; sourceTree = "<group>"; };
+		F7F254B91FA06F9C00D35FCE /* UIColor+HHBColorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HHBColorExtension.h"; sourceTree = "<group>"; };
+		F7F254BA1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HHBColorExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7F254621FA0295900D35FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7F2545C1FA0295900D35FCE = {
+			isa = PBXGroup;
+			children = (
+				F7F254671FA0295900D35FCE /* HHBGetContact */,
+				F7F254661FA0295900D35FCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7F254661FA0295900D35FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7F254651FA0295900D35FCE /* HHBGetContact.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7F254671FA0295900D35FCE /* HHBGetContact */ = {
+			isa = PBXGroup;
+			children = (
+				F7F254AB1FA06E4E00D35FCE /* HHBContact */,
+				F7F254B01FA06E4E00D35FCE /* HHBExtension */,
+				F7F254681FA0295900D35FCE /* AppDelegate.h */,
+				F7F254691FA0295900D35FCE /* AppDelegate.m */,
+				F7F2546B1FA0295900D35FCE /* ViewController.h */,
+				F7F2546C1FA0295900D35FCE /* ViewController.m */,
+				F7F254891FA02D9500D35FCE /* HHBContactTableViewController.h */,
+				F7F2548A1FA02D9500D35FCE /* HHBContactTableViewController.m */,
+				F7F254711FA0295900D35FCE /* Assets.xcassets */,
+				F7F254761FA0295900D35FCE /* Info.plist */,
+				F7F254771FA0295900D35FCE /* main.m */,
+				F7F2548C1FA033D100D35FCE /* HHBContactTableViewCell.h */,
+				F7F2548D1FA033D100D35FCE /* HHBContactTableViewCell.m */,
+			);
+			path = HHBGetContact;
+			sourceTree = "<group>";
+		};
+		F7F254AB1FA06E4E00D35FCE /* HHBContact */ = {
+			isa = PBXGroup;
+			children = (
+				F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */,
+				F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */,
+				F7F254AE1FA06E4E00D35FCE /* HHBGetContact.h */,
+				F7F254AF1FA06E4E00D35FCE /* HHBContactModel.h */,
+			);
+			path = HHBContact;
+			sourceTree = "<group>";
+		};
+		F7F254B01FA06E4E00D35FCE /* HHBExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F7F254B91FA06F9C00D35FCE /* UIColor+HHBColorExtension.h */,
+				F7F254BA1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m */,
+				F7F254B31FA06E4E00D35FCE /* UIView+HHBExtension.h */,
+				F7F254B11FA06E4E00D35FCE /* UIView+HHBExtension.m */,
+				F7F254B21FA06E4E00D35FCE /* NSString+HHBPinyinString.h */,
+				F7F254B41FA06E4E00D35FCE /* NSString+HHBPinyinString.m */,
+			);
+			path = HHBExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7F254641FA0295900D35FCE /* HHBGetContact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F2547B1FA0295900D35FCE /* Build configuration list for PBXNativeTarget "HHBGetContact" */;
+			buildPhases = (
+				F7F254611FA0295900D35FCE /* Sources */,
+				F7F254621FA0295900D35FCE /* Frameworks */,
+				F7F254631FA0295900D35FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHBGetContact;
+			productName = HHBGetContact;
+			productReference = F7F254651FA0295900D35FCE /* HHBGetContact.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7F2545D1FA0295900D35FCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = DylanHu;
+				TargetAttributes = {
+					F7F254641FA0295900D35FCE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F7F254601FA0295900D35FCE /* Build configuration list for PBXProject "HHBGetContact" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7F2545C1FA0295900D35FCE;
+			productRefGroup = F7F254661FA0295900D35FCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7F254641FA0295900D35FCE /* HHBGetContact */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7F254631FA0295900D35FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F254721FA0295900D35FCE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7F254611FA0295900D35FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F254B81FA06E6100D35FCE /* NSString+HHBPinyinString.m in Sources */,
+				F7F2548B1FA02D9500D35FCE /* HHBContactTableViewController.m in Sources */,
+				F7F254BB1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m in Sources */,
+				F7F2546D1FA0295900D35FCE /* ViewController.m in Sources */,
+				F7F254B61FA06E5800D35FCE /* HHBContactModel.m in Sources */,
+				F7F254B71FA06E6100D35FCE /* UIView+HHBExtension.m in Sources */,
+				F7F2548E1FA033D100D35FCE /* HHBContactTableViewCell.m in Sources */,
+				F7F254781FA0295900D35FCE /* main.m in Sources */,
+				F7F254B51FA06E5800D35FCE /* HHBGetContact.m in Sources */,
+				F7F2546A1FA0295900D35FCE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7F254791FA0295900D35FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7F2547A1FA0295900D35FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7F2547C1FA0295900D35FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GACH34ZD46;
+				INFOPLIST_FILE = HHBGetContact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dylanhu.HHBGetContact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7F2547D1FA0295900D35FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GACH34ZD46;
+				INFOPLIST_FILE = HHBGetContact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.dylanhu.HHBGetContact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7F254601FA0295900D35FCE /* Build configuration list for PBXProject "HHBGetContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F254791FA0295900D35FCE /* Debug */,
+				F7F2547A1FA0295900D35FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7F2547B1FA0295900D35FCE /* Build configuration list for PBXNativeTarget "HHBGetContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F2547C1FA0295900D35FCE /* Debug */,
+				F7F2547D1FA0295900D35FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7F2545D1FA0295900D35FCE /* Project object */;
+}
