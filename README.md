@@ -7,7 +7,7 @@
 > iOS9.0后，苹果推出了Contacts库，此库使用的OC更加的面相对象，以后有时间再写一套吧。
 
 
-注意：获取手机通讯录需要用户开启权限，在info.plist文件中添加如下：
+注意：iOS10以后获取手机通讯录需要用户开启权限，在info.plist文件中添加如下：
 ```xml
 <key>NSContactsUsageDescription</key>
 	<string>当前应用需要获取您的通讯录(这个自己可以随意写)</string>
