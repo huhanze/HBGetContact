@@ -7,6 +7,8 @@
 //
 
 #import "HHBGetContact.h"
+#import <Contacts/Contacts.h>
+
 @interface HHBGetContact()
 /// 记录ID
 @property (nonatomic,assign) NSInteger recordID;
@@ -73,6 +75,9 @@
                 nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastNameString];
             }
         }
+        if (nameString.length == 0) {
+            continue;
+        }
         self.name = nameString;
         self.recordID = (int)ABRecordGetRecordID(person);
         [contactDict setObject:self.name forKey:@"name"];
@@ -121,6 +126,27 @@
         if (abName) CFRelease(abName);
         if (abLastName) CFRelease(abLastName);
         if (abFullName) CFRelease(abFullName);
+        
+    }
+    
+    return contactM.copy;
+}
+
+#pragma mark - 通过CNContact方式获取信息，iOS9.0以后可以通过此方式
++ (NSArray <CNContact *> *)getContactsFromContactLibrary {
+    NSMutableArray *contactM = nil;
+    if (@available(iOS 9.0, *)) {
+        contactM = @[].mutableCopy;
+        CNContactStore *store = [[CNContactStore alloc] init];
+        CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactFamilyNameKey,CNContactNamePrefixKey,CNContactGivenNameKey,CNContactMiddleNameKey,CNContactPhoneNumbersKey]];
+        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+        if (status == CNAuthorizationStatusAuthorized) {
+            [store enumerateContactsWithFetchRequest:request error:nil usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
+                [contactM addObject:contact];
+            }];
+        }
+    } else {
+        
     }
     return contactM.copy;
 }

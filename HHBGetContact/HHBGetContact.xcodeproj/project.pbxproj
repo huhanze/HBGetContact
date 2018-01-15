@@ -95,10 +95,10 @@
 		F7F254AB1FA06E4E00D35FCE /* HHBContact */ = {
 			isa = PBXGroup;
 			children = (
-				F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */,
-				F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */,
 				F7F254AE1FA06E4E00D35FCE /* HHBGetContact.h */,
+				F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */,
 				F7F254AF1FA06E4E00D35FCE /* HHBContactModel.h */,
+				F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */,
 			);
 			path = HHBContact;
 			sourceTree = "<group>";
