@@ -132,23 +132,4 @@
     return contactM.copy;
 }
 
-#pragma mark - 通过CNContact方式获取信息，iOS9.0以后可以通过此方式
-+ (NSArray <CNContact *> *)getContactsFromContactLibrary {
-    NSMutableArray *contactM = nil;
-    if (@available(iOS 9.0, *)) {
-        contactM = @[].mutableCopy;
-        CNContactStore *store = [[CNContactStore alloc] init];
-        CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactFamilyNameKey,CNContactNamePrefixKey,CNContactGivenNameKey,CNContactMiddleNameKey,CNContactPhoneNumbersKey]];
-        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-        if (status == CNAuthorizationStatusAuthorized) {
-            [store enumerateContactsWithFetchRequest:request error:nil usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
-                [contactM addObject:contact];
-            }];
-        }
-    } else {
-        
-    }
-    return contactM.copy;
-}
-
 @end

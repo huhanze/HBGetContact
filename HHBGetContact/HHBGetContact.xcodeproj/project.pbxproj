@@ -18,6 +18,8 @@
 		F7F254B71FA06E6100D35FCE /* UIView+HHBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254B11FA06E4E00D35FCE /* UIView+HHBExtension.m */; };
 		F7F254B81FA06E6100D35FCE /* NSString+HHBPinyinString.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254B41FA06E4E00D35FCE /* NSString+HHBPinyinString.m */; };
 		F7F254BB1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F254BA1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m */; };
+		FC7E82F4200DF9FF00D8830B /* HBGetContactsOfPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7E82F3200DF9FF00D8830B /* HBGetContactsOfPhone.m */; };
+		FC7E82F7200DFCBA00D8830B /* HBGetContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7E82F6200DFCBA00D8830B /* HBGetContactsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,10 @@
 		F7F254B41FA06E4E00D35FCE /* NSString+HHBPinyinString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHBPinyinString.m"; sourceTree = "<group>"; };
 		F7F254B91FA06F9C00D35FCE /* UIColor+HHBColorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HHBColorExtension.h"; sourceTree = "<group>"; };
 		F7F254BA1FA06F9C00D35FCE /* UIColor+HHBColorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HHBColorExtension.m"; sourceTree = "<group>"; };
+		FC7E82F2200DF9FF00D8830B /* HBGetContactsOfPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBGetContactsOfPhone.h; sourceTree = "<group>"; };
+		FC7E82F3200DF9FF00D8830B /* HBGetContactsOfPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBGetContactsOfPhone.m; sourceTree = "<group>"; };
+		FC7E82F5200DFCBA00D8830B /* HBGetContactsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBGetContactsModel.h; sourceTree = "<group>"; };
+		FC7E82F6200DFCBA00D8830B /* HBGetContactsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBGetContactsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 				F7F254AC1FA06E4E00D35FCE /* HHBGetContact.m */,
 				F7F254AF1FA06E4E00D35FCE /* HHBContactModel.h */,
 				F7F254AD1FA06E4E00D35FCE /* HHBContactModel.m */,
+				FC7E82F2200DF9FF00D8830B /* HBGetContactsOfPhone.h */,
+				FC7E82F3200DF9FF00D8830B /* HBGetContactsOfPhone.m */,
+				FC7E82F5200DFCBA00D8830B /* HBGetContactsModel.h */,
+				FC7E82F6200DFCBA00D8830B /* HBGetContactsModel.m */,
 			);
 			path = HHBContact;
 			sourceTree = "<group>";
@@ -194,6 +204,8 @@
 				F7F2548E1FA033D100D35FCE /* HHBContactTableViewCell.m in Sources */,
 				F7F254781FA0295900D35FCE /* main.m in Sources */,
 				F7F254B51FA06E5800D35FCE /* HHBGetContact.m in Sources */,
+				FC7E82F7200DFCBA00D8830B /* HBGetContactsModel.m in Sources */,
+				FC7E82F4200DF9FF00D8830B /* HBGetContactsOfPhone.m in Sources */,
 				F7F2546A1FA0295900D35FCE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

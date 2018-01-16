@@ -1,7 +1,7 @@
 //
 //  HHBContactModel.h
 //  HHBGetContact
-//
+//  
 //  Created by DylanHu on 2015/10/25.
 //  Copyright © 2015年 DylanHu. All rights reserved.
 //
@@ -39,7 +39,7 @@
  @param dictionary 单个联系人信息
  @return 联系人模型对象
  */
-+ (instancetype)contactModelWithWithDictionary:(NSDictionary *)dictionary;
++ (instancetype)contactModelWithDictionary:(NSDictionary *)dictionary;
 
 /**
  联系人数据转模型数据集合

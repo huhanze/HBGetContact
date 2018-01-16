@@ -36,7 +36,7 @@
     return self;
 }
 
-+ (instancetype)contactModelWithWithDictionary:(NSDictionary *)dictionary {
++ (instancetype)contactModelWithDictionary:(NSDictionary *)dictionary {
     return [[self alloc] initWithDictionary:dictionary];
 }
 
@@ -45,7 +45,7 @@
     if (dataArray.count) {
         modelArray = [NSMutableArray arrayWithCapacity:dataArray.count];
         for (NSDictionary *dict in dataArray) {
-            HHBContactModel *model = [HHBContactModel contactModelWithWithDictionary:dict];
+            HHBContactModel *model = [HHBContactModel contactModelWithDictionary:dict];
             [modelArray addObject:model];
         }
     }

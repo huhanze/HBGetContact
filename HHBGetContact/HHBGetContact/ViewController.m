@@ -10,6 +10,9 @@
 #import "HHBContactTableViewController.h"
 #import "HHBGetContact.h"
 #import "UIView+HHBExtension.h"
+#import "HBGetContactsOfPhone.h"
+#import "HBGetContactsModel.h"
+#import "UIView+HHBExtension.h"
 
 @interface ViewController ()
 
@@ -29,6 +32,8 @@
     btn.backgroundColor = [UIColor blackColor];
     btn.hb_centerX = self.view.hb_centerX;
     btn.hb_centerY = self.view.hb_centerY;
+    
+    [HBGetContactsModel contactModelsWithArray:[HBGetContactsOfPhone getContactsFromContactLibrary]];
 }
 
 - (void)btnTouchUpInside:(UIButton *)sender {
