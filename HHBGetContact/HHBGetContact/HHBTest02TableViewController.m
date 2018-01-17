@@ -1,17 +1,17 @@
 //
-//  HHBContactTableViewController.m
+//  HHBTest02TableViewController.m
 //  HHBGetContact
 //
-//  Created by DylanHu on 2017/10/08.
-//  Copyright © 2017年 DylanHu. All rights reserved.
+//  Created by DylanHu on 2018/1/17.
+//  Copyright © 2018年 DylanHu. All rights reserved.
 //
 
-#import "HHBContactTableViewController.h"
+#import "HHBTest02TableViewController.h"
 #import "HHBContactTableViewCell.h"
 #import "UIColor+HHBColorExtension.h"
-#import "HHBContactModel.h"
+#import "HHBGetContactsModel.h"
 
-@interface HHBContactTableViewController ()
+@interface HHBTest02TableViewController ()
 
 @property (nonatomic, copy) NSArray *dataArray;
 @property (nonatomic, copy) NSArray *indexArray;
@@ -19,11 +19,11 @@
 
 @end
 
-@implementation HHBContactTableViewController
+@implementation HHBTest02TableViewController
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [HHBContactCategoryModel getContactsCategoryModel];
+        _dataArray = [HHBGetContactsCategoryModel getContactsCategoryModel];
     }
     return _dataArray;
 }
@@ -31,7 +31,7 @@
 -(NSArray *)indexArray {
     if (!_indexArray) {
         NSMutableArray *array = @[].mutableCopy;
-        for (HHBContactCategoryModel *model in self.dataArray) {
+        for (HHBGetContactsCategoryModel *model in self.dataArray) {
             [array addObject:model.index];
         }
         _indexArray = array.copy;
@@ -46,7 +46,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.backgroundColor = [UIColor hb_colorFromHexRGB:@"f7f7f7"];
-
+    
 }
 
 
@@ -57,18 +57,18 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    HHBContactCategoryModel *model = self.dataArray[section];
+    HHBGetContactsCategoryModel *model = self.dataArray[section];
     return model.contactsArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    HHBContactCategoryModel *model = self.dataArray[indexPath.section];
-    HHBContactModel *contactModel = model.contactsArray[indexPath.row];
-    HHBContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier_001"];
+    HHBGetContactsCategoryModel *model = self.dataArray[indexPath.section];
+    HHBGetContactsModel *contactModel = model.contactsArray[indexPath.row];
+    HHBContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier_002"];
     if (cell == nil) {
-        cell = [[HHBContactTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"reuseIdentifier_001"];
+        cell = [[HHBContactTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"reuseIdentifier_002"];
     }
-    cell.contact = contactModel;
+    cell.contactModel = contactModel;
     return cell;
 }
 
@@ -93,7 +93,7 @@
 
 #pragma mark - Section header view
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    HHBContactCategoryModel *model = self.dataArray[section];
+    HHBGetContactsCategoryModel *model = self.dataArray[section];
     UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableView.hb_width - 20, 20)];
     lab.backgroundColor = self.tableView.backgroundColor;
     NSString *headerStr = [NSString stringWithFormat:@"   %@",model.index];

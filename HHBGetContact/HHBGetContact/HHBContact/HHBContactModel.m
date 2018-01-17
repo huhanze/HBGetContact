@@ -60,7 +60,7 @@
 /// 索引
 @property (nonatomic, copy) NSString *index;
 
-/// 索引对应的国家集合
+/// 索引对应的联系人集合
 @property (nonatomic, copy) NSArray <HHBContactModel *> *contactsArray;
 
 @end

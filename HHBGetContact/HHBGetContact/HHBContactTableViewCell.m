@@ -7,6 +7,8 @@
 //
 
 #import "HHBContactTableViewCell.h"
+#import "HHBContactModel.h"
+#import "HHBGetContactsModel.h"
 
 @implementation HHBContactTableViewCell
 
@@ -19,6 +21,14 @@
     _contact = contact;
     self.textLabel.text = contact.name;
     self.detailTextLabel.text = contact.telephoneNum;
+    self.textLabel.font = [UIFont systemFontOfSize:15.0];
+    self.detailTextLabel.font = [UIFont systemFontOfSize:13.0];
+}
+
+- (void)setContactModel:(HHBGetContactsModel *)contactModel {
+    _contactModel = contactModel;
+    self.textLabel.text = contactModel.fullName;
+    self.detailTextLabel.text = contactModel.telephoneNum;
     self.textLabel.font = [UIFont systemFontOfSize:15.0];
     self.detailTextLabel.font = [UIFont systemFontOfSize:13.0];
 }
