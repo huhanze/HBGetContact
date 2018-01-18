@@ -1,6 +1,6 @@
 //
 //  HBGetContactsModel.h
-//  HHBGetContact
+//  HBGetContactsModel
 //  联系人模型 --- 针对处理CNContact(iOS9.0以后)数据的处理
 //  Created by DylanHu on 2018/1/16.
 //  Copyright © 2018年 DylanHu. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  HBGetContactsModel.m
-//  HHBGetContact
+//  HBGetContactsModel
 //  联系人模型 
 //  Created by DylanHu on 2018/1/16.
 //  Copyright © 2018年 DylanHu. All rights reserved.
